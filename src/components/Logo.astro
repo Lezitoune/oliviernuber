@@ -1,7 +1,15 @@
 ---
-import { SITE } from '~/utils/config';
+// import { SITE } from '~/utils/config';
+import { Image } from 'astro:assets';
 ---
 
-<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
+<!-- <span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
   🚀 {SITE?.name}
+</span> -->
+
+<span class="lazy self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white block dark:hidden">
+  <Image src="/img/LogoSiteNoir.png" alt="Logo" width="200" height="60"></Image>
+</span>
+<span class="lazy self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white hidden dark:block">
+  <Image src="/img/LogoSiteBlanc.png" alt="Logo" width="200" height="60"></Image>
 </span>

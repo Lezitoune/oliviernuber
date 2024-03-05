@@ -115,7 +115,7 @@ export const headerData = {
       href: '#',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
@@ -166,8 +166,9 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'C.G.U.', href: getPermalink('/terms') },
-    { text: 'Politique de confidentialité', href: getPermalink('/privacy') },
+    { text: 'C.G.U.', href: getPermalink('/cgu') },
+    { text: 'C.G.V.', href: getPermalink('/cgv') },
+    { text: 'Politique de confidentialité', href: getPermalink('/confidentialite') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
