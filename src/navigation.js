@@ -178,9 +178,7 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' }, */
   ],
   footNote: `
-  <span class="lazy w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-  Créé par <a class="text-yellow-300 hover:underline dark:text-yellow-300" href="https://onwidget.com/" target="_blank"> onWidget</a> - 
-  <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 rtl:float-right rounded-sm bg-[url(https://www.oliviernuber.com/images/Logo-Noir-Fond-Blanc-32x32.png)]"style="position: absolute;"></span>
-  <span style="margin-left: 1.75rem;">Modifié avec </span><span class="animate-pulse text-red-900">♥</span> par <span class="text-yellow-300 dark:text-yellow-300">Olivier Nuber</span> - Tous droits réservés.
-`,
+    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
+    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+  `,
 };
