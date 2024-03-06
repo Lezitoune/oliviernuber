@@ -1,12 +1,28 @@
 ---
-import Layout from '~/layouts/Layout.astro';
+// import Layout from '~/layouts/Layout.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { Image } from 'astro:assets';
 import { getHomePermalink } from '~/utils/permalinks';
 
-const title = `Error 404`;
+const title = `Oups ! Erreur 404`;
 ---
 
 <Layout metadata={{ title }}>
-  <section class="flex items-center h-full p-16">
+  <section class="flex items-center h-full padtop">
+    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+      <div class="max-w-md text-center">
+        <h2 class="mb-8 font-bold text-9xl">
+          <span class="sr-only">Erreur</span>
+          <span class="text-red-600">Oups</span>
+        </h2>
+        <p class="text-3xl font-semibold md:text-3xl">Quelqu'un a oublié de charger l'appareil.</p>
+        <Image src="/img/nofilm.png" alt="Logo" width="1300" height="700"></Image>
+        <p class="mt-4 mb-8 text-lg font-semibold">Je suis sorti chercher une pellicule.<br>D'ici là vous trouverez bien d'autres choses<br>sur notre page d'accueil.</p>
+        <a rel="noopener noreferrer" href={getHomePermalink()} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-4">Retrouvez-moi à l'accueil</a>
+      </div>
+    </div>
+  </section>
+<!--   <section class="flex items-center h-full p-16">
     <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
       <div class="max-w-md text-center">
         <h2 class="mb-8 font-bold text-9xl">
@@ -20,5 +36,5 @@ const title = `Error 404`;
         <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4">Back to homepage</a>
       </div>
     </div>
-  </section>
+  </section> -->
 </Layout>
