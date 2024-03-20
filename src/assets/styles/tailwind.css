@@ -5,6 +5,7 @@
 @layer utilities {
   .bg-page {
     background-color: var(--aw-color-bg-page);
+    @apply transition-colors duration-1000;
   }
   .bg-dark {
     background-color: var(--aw-color-bg-page-dark);
@@ -80,7 +81,7 @@
 }
 
 [data-aw-toggle-menu] path {
-  @apply transition;
+  @apply transition duration-1000;
 }
 [data-aw-toggle-menu].expanded g > path:first-child {
   @apply -rotate-45 translate-y-[15px] translate-x-[-3px];

@@ -36,7 +36,7 @@ const {
                     <Icon
                       name={icon || defaultIcon}
                       class={twMerge(
-                        "w-10 h-10 p-2 rounded-full border-2",
+                        "w-10 h-10 p-2 rounded-full border-2 icone",
                         defaultIconClass,
                         itemClasses?.icon
                       )}
@@ -80,3 +80,9 @@ const {
     </div>
   )
 }
+<style>
+  .icone {
+    border-color: #cba135;
+    color: #b07418;
+  }
+</style>
