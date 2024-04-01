@@ -2,7 +2,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    {
+/*     {
       text: 'Homes',
       links: [
         {
@@ -22,7 +22,7 @@ export const headerData = {
           href: getPermalink('/homes/personal'),
         },
       ],
-    },
+    }, */
     {
       text: 'Pages',
       links: [
@@ -89,7 +89,7 @@ export const headerData = {
         },
       ],
     },
-    {
+/*     {
       text: 'Blog',
       links: [
         {
@@ -113,18 +113,18 @@ export const headerData = {
           href: getPermalink('astro', 'tag'),
         },
       ],
-    },
-    {
+    }, */
+/*     {
       text: 'Widgets',
       href: '#',
-    },
+    }, */
   ],
   // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
   links: [
-    {
+/*     {
       title: 'Product',
       links: [
         { text: 'Features', href: '#' },
@@ -135,8 +135,8 @@ export const footerData = {
         { text: 'Pricing', href: '#' },
         { text: 'Resources', href: '#' },
       ],
-    },
-    {
+    }, */
+/*     {
       title: 'Platform',
       links: [
         { text: 'Developer API', href: '#' },
@@ -145,8 +145,8 @@ export const footerData = {
         { text: 'Electron', href: '#' },
         { text: 'AstroWind Desktop', href: '#' },
       ],
-    },
-    {
+    }, */
+/*     {
       title: 'Support',
       links: [
         { text: 'Docs', href: '#' },
@@ -155,8 +155,8 @@ export const footerData = {
         { text: 'Skills', href: '#' },
         { text: 'Status', href: '#' },
       ],
-    },
-    {
+    }, */
+/*     {
       title: 'Company',
       links: [
         { text: 'About', href: '#' },
@@ -167,7 +167,7 @@ export const footerData = {
         { text: 'Social Impact', href: '#' },
         { text: 'Shop', href: '#' },
       ],
-    },
+    }, */
   ],
   secondaryLinks: [
     { text: 'Mentions Légales', href: getPermalink('/mentions') },
