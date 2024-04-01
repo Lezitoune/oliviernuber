@@ -47,6 +47,10 @@ export const headerData = {
           href: getPermalink('/contact'),
         },
         {
+          text: 'Contact Form',
+          href: getPermalink('/contactform'),
+        },
+        {
           text: 'Terms',
           href: getPermalink('/terms'),
         },

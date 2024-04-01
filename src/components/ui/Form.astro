@@ -9,7 +9,7 @@ const { inputs, textarea, disclaimer, button = 'Contactez-moi maintenant !', des
   {
     inputs &&
       inputs.map(
-        ({ type = 'text', name, label = '', autocomplete = 'on', placeholder = 'Votre prénom et nom' }) =>
+        ({ type = 'text', name, label = '', autocomplete = 'on', placeholder = '' }) =>
           name && (
             <div class="mb-6">
               {label && (
@@ -40,7 +40,7 @@ const { inputs, textarea, disclaimer, button = 'Contactez-moi maintenant !', des
           id="textarea"
           name="textarea"
           rows={textarea.rows ? textarea.rows : 4}
-          placeholder="Votre message ..."
+          placeholder=""
           class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
         />
       </div>

@@ -1,0 +1,30 @@
+---
+// import Layout from '~/layouts/Layout.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { Image } from 'astro:assets';
+import { getHomePermalink } from '~/utils/permalinks';
+
+const title = `Merci ! Couriel reçu`;
+---
+
+<Layout metadata={{ title }}>
+  <section class="flex items-center h-full padtop">
+    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+      <div class="max-w-md text-center">
+        <h2 class="mb-8 font-bold text-9xl">
+          <span class="sr-only">Erreur</span>
+          <span class="text-green-600">Merci !</span>
+        </h2>
+        <p class="text-3xl font-semibold md:text-3xl">Votre message est parti.</p>
+        <Image src="/img/ok.png" alt="Logo" width="1300" height="700"></Image>
+        <p class="mt-4 mb-8 text-lg font-semibold">Je vous répondrai dès que possible.<br>Vous allez être redirigé vers<br>la page d'accueil dans 10s.</p>
+        <a rel="noopener noreferrer" href={getHomePermalink()} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-4">Retour à l'accueil</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+<script>
+  var timer = setTimeout(function() {
+      window.location='https://photo.oliviernuber.com'
+  }, 10000);
+</script>
